@@ -11,7 +11,7 @@ const Footer = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className="bg-[#0b2c2d] py-[80px]">
+    <div className="bg-[#0b2c2d] py-[80px] overflow-x-hidden">
       <div className="containerr flex flex-wrap flex-col sm:flex-row justify-between  items-center sm:items-start gap-y-[40px] sm:gap-y-[50px] lg:gap-0">
         <div
           data-aos="fade-right"

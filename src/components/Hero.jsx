@@ -11,17 +11,17 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className=" flex flex-col md:flex-row-reverse  justify-between items-center  lg:items-end py-[30px] md:py-[60px] xl:py-[70px] md:gap-2 lg:gap-8 mt-[40px]"
+      className=" overflow-x-hidden  flex flex-col md:flex-row-reverse  justify-between items-center  lg:items-end py-[30px] md:py-[60px] xl:py-[70px] md:gap-2 lg:gap-8 mt-[40px]"
     >
-      <div className=" relative md:w-[65%] lg:flex-[8] xl:flex-[8]">
-        <div className="  absolute overflow-hidden sm:h-[330px] md:h-[320px] lg:h-[330px] xl:h-[380px] z-[-1] sm:w-[330px] md:w-[320px] lg:w-[330px] xl:w-[380px] rounded-full bg-[#005659be] top-[55%] left-[50%] md:left-[58%] lg:left-[64%] xl:left-[62%] translate-y-[-50%] translate-x-[-50%]">
+      <div className=" relative left-[-5px] md:left-0 md:w-[65%] lg:flex-[8] xl:flex-[8]">
+        <div className="  absolute overflow-hidden sm:h-[330px] md:h-[320px] lg:h-[330px] xl:h-[380px] z-[-1] sm:w-[330px] md:w-[320px] lg:w-[330px] xl:w-[380px] rounded-full bg-[#005659be] top-[55%] left-[50%] md:left-[58%] lg:left-[58%] xl:left-[60%] translate-y-[-50%] translate-x-[-50%]">
           <div className="  absolute h-[300px] z-[-1] w-[300px] rounded-full bg-[#00565995] top-[10%] left-[50%] translate-y-[-50%] translate-x-[-50%]"></div>
         </div>
         <img
           data-aos="fade-left"
           src={salem}
           alt=""
-          className=" w-[420px] md:w-[461px] md:ml-[20px] lg:ml-[55px] xl:ml-[80px] textShadowImage"
+          className=" w-[420px] md:w-[461px] md:ml-[20px] lg:ml-[30px] xl:ml-[70px] textShadowImage"
         />
       </div>
       <div className="pt-[20px] md:py-[0px] md:w-[50%] lg:w-auto lg:flex-[10] xl:flex-[10] flex flex-row-reverse  lg:justify-end  md:gap-3 lg:gap-8 mb-[25px]">

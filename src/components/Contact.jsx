@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden  bg-[#fcfcfc]"
+      className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden  bg-[#fcfcfc]  overflow-x-hidden"
     >
       <div className="w-[90%] sm:w-[80%] xl:flex-[0.75] bg-black-100 p-4  sm:p-8 rounded-2xl mx-auto">
         <p
@@ -55,7 +55,10 @@ const Contact = () => {
         >
           Get in touch
         </p>
-        <h3 data-aos="zoom-in" className="text-[63px] font-bold text-[#1a6669]">
+        <h3
+          data-aos="zoom-in"
+          className="text-[50px] md:text-[63px] font-bold text-[#1a6669]"
+        >
           Contact.
         </h3>
         <form
