@@ -6,7 +6,6 @@ const Navbar = () => {
   return (
     <div className="bg-white boxshadowNav  fixed w-[100%] top-0 z-10">
       <div className="containerr flex justify-between items-center">
-        {" "}
         <div>
           <a href="#home">
             <img src={logo} alt="logo" className="w-[80px]" />
@@ -64,7 +63,7 @@ const Navbar = () => {
                 </li>
                 <li className=" border-b border-[#777]  py-[5px] hover:bg-[#3d7d80] hover:text-[#e4e4e4] text-[#c7c7c7]">
                   <a
-                    href="#about"
+                    href="#contact"
                     className="text-[20px] font-semibold "
                     onClick={() => {
                       SetShow(!Show);
@@ -79,7 +78,7 @@ const Navbar = () => {
         </div>
         <div className=" hidden sm:block">
           <a
-            href=""
+            href="#contact"
             className="bg-[#005659] py-1 px-[50px] text-[22px] font-bold text-[#bdbdbd] rounded-xl hover:text-[#e3e3e3] hover:bg-[#286d6d]"
           >
             Contact Us{" "}

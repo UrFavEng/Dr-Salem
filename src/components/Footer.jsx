@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assest/logo.png";
 import { BiLogoGmail } from "react-icons/bi";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { BsPhoneFill } from "react-icons/bs";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+    AOS.refresh();
+  }, []);
   return (
     <div className="bg-[#0b2c2d] py-[80px]">
       <div className="containerr flex flex-wrap flex-col sm:flex-row justify-between  items-center sm:items-start gap-y-[40px] sm:gap-y-[50px] lg:gap-0">
-        <div className="sm:w-[100%] lg:w-[280px] xl:w-[330px] flex items-center sm:justify-center">
+        <div
+          data-aos="fade-right"
+          className="sm:w-[100%] lg:w-[280px] xl:w-[330px] flex items-center sm:justify-center"
+        >
           <img src={logo} alt="logo" className="w-[100px]" />
           <h1 className="text-[#ccc] text-[28px] font-semibold flex flex-col ">
             Salem Elzeny{" "}
@@ -17,7 +25,10 @@ const Footer = () => {
             </span>
           </h1>
         </div>
-        <div className=" sm:w-[280px] xl:w-[330px] flex flex-col justify-center items-center">
+        <div
+          data-aos="fade-up"
+          className=" sm:w-[280px] xl:w-[330px] flex flex-col justify-center items-center"
+        >
           <h1 className="text-[18px] text-[#ccc] font-semibold mb-[15px] ">
             Quick Links
           </h1>
@@ -33,7 +44,10 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="sm:w-[280px] xl:w-[330px]  flex flex-col justify-center items-center">
+        <div
+          data-aos="fade-left"
+          className="sm:w-[280px] xl:w-[330px]  flex flex-col justify-center items-center"
+        >
           <h1 className="text-[18px] text-[#ccc] font-semibold mb-[15px] ">
             Contact Us
           </h1>
