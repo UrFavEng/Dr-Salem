@@ -16,32 +16,32 @@ const Contact = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    emailjs
-      .send(
-        "service_uob2p0j",
-        "template_e339qcp",
-        {
-          from_name: form.name,
-          to_name: "Ahmed Shafek",
-          from_email: form.email,
-          to_email: "engahmedshafek1@gmail.com",
-          message: form.message,
-        },
-        "q7o27W3T9wHqfUS5e"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-          setForm({ name: "", email: "", message: "" });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert("Something went wrong");
-        }
-      );
+    // setLoading(true);
+    //   emailjs
+    //     .send(
+    //       "service_uob2p0j",
+    //       "template_e339qcp",
+    //       {
+    //         from_name: form.name,
+    //         to_name: "Ahmed Shafek",
+    //         from_email: form.email,
+    //         to_email: "engahmedshafek1@gmail.com",
+    //         message: form.message,
+    //       },
+    //       "q7o27W3T9wHqfUS5e"
+    //     )
+    //     .then(
+    //       () => {
+    //         setLoading(false);
+    //         alert("Thank you. I will get back to you as soon as possible.");
+    //         setForm({ name: "", email: "", message: "" });
+    //       },
+    //       (error) => {
+    //         setLoading(false);
+    //         console.log(error);
+    //         alert("Something went wrong");
+    //       }
+    //     );
   };
   return (
     <div
