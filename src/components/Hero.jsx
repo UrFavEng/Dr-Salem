@@ -21,7 +21,7 @@ const Hero = () => {
           data-aos="fade-left"
           src={salem}
           alt=""
-          className=" w-[420px] md:w-[461px] md:ml-[20px] lg:ml-[30px] xl:ml-[70px] textShadowImage"
+          className=" w-[420px] md:w-[461px] md:ml-[20px] lg:ml-[30px] xl:ml-[70px] textShadowImage  filterShadow"
         />
       </div>
       <div className="pt-[20px] md:py-[0px] md:w-[50%] lg:w-auto lg:flex-[10] xl:flex-[10] flex flex-row-reverse  lg:justify-end  md:gap-3 lg:gap-8 mb-[25px]">

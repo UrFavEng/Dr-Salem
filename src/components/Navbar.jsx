@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "../assest/logo.png";
 import { FaBars } from "react-icons/fa";
 const Navbar = () => {
